@@ -27,3 +27,4 @@ int main() {
     printf("Novo valor de b (após *= 3 e --): %d\n", b);
  
     return 0;
+    

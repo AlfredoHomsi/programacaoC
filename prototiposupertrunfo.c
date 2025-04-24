@@ -3,6 +3,10 @@ int main(){
 //variaveis↓
     int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
     float area1, area2, pib1, pib2;
+    float densidade_populacional1= populacao1 / area1;
+    float densidade_populacional2= populacao2 / area2;
+    float pib_per_capita1= pib1 / populacao1;
+    float pib_per_capita2= pib2 / populacao2;
     char nome1[50], nome2[50], estado1[50], estado2[50], codigo1[50], codigo2[50];
 
     printf("Digite o nome da primeira carta: \n");
@@ -59,6 +63,8 @@ int main(){
     printf("-Numero de pontos turisticos da segunda carta:\n %d \n", pontos_turisticos2);
     printf("-PIB da segunda carta:\n %f \n", pib2);
     printf("-Codigo da segunda carta:\n %s \n", codigo2);
+    printf("-A densidade populacional da segunda carta é: \n %f \n", densidade_populacional2);
+    printf("-O PIB per capita da segunda carta é: \n %f \n \n", pib_per_capita2);
 
     return 0;
 }

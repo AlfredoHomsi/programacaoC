@@ -7,7 +7,7 @@ int main() {
    
 {printf("Movemento do bispo:\n");
     while (bispo <= 5) {
-        
+         
         printf("Cima\n");
         bispo++;}
 

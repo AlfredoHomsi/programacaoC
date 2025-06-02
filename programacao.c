@@ -1,29 +1,26 @@
 #include <stdio.h>
  
 int main() {
-    int a = 10;
-    int b = 5;
+    int matriz[10][10];
  
-    // Operadores aritméticos
-    int soma = a + b;
-    int subtracao = a - b;
-    int multiplicacao = a * b;
-    int divisao = a / b;
+    // Inicialização da matriz com base em condições simples
+    for (int i = 0; i < 10; i++) {      // Loop externo para as linhas
+        for (int j = 0; j < 10; j++) {  // Loop interno para as colunas
+            if (j == 2,11,12,13,22) {
+                matriz[i][j] = 3; // Se a coluna for par, atribui 1
+            } else {
+                matriz[i][j] = 0; // Se a coluna for ímpar, atribui 0
+            }
+        }
+    }
  
-    // Operadores de atribuição
-    a += 2; // a será 12
-    b *= 3; // b será 15
- 
-    // Operadores de incremento e decremento
-    a++; // a será 13
-    b--; // b será 14
- 
-    // Exibição dos resultados
-    printf("Soma: %d\n", soma);
-    printf("Subtração: %d\n", subtracao);
-    printf("Multiplicação: %d\n", multiplicacao);
-    printf("Divisão: %d\n", divisao);
-    printf("Novo valor de a (após += 2 e ++): %d\n", a);
-    printf("Novo valor de b (após *= 3 e --): %d\n", b);
+    // Impressão da matriz
+    for (int i = 0; i < 10; i++) {      // Loop para imprimir cada linha
+        for (int j = 0; j < 10; j++) {  // Loop para imprimir cada coluna
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
  
     return 0;
+}

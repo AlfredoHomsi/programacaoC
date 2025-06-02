@@ -39,7 +39,7 @@ int main() {
        {
            soma++;
           matriz[i][j] = soma;
-            printf("0 ", matriz[i][j]);
+            printf("%d ", matriz[i][j]);
         }printf ("\n");
  
     }
